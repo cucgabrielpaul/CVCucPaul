@@ -1,14 +1,13 @@
-import React from "react";
+import { Fragment } from "react";
 import NavBar from "../Components/NavBar/NavBar";
 import TechGrid from "../Components/SkillsGrid/TechGrid";
 
 const DigitalSkills = () => {
   return (
-    <div>
+    <Fragment>
       <NavBar />
-      {"DigitalSkills"}
       <TechGrid />
-    </div>
+    </Fragment>
   );
 };
 export default DigitalSkills;
