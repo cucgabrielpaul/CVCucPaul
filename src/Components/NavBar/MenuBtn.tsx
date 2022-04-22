@@ -1,4 +1,4 @@
-import { Button, ButtonGroup, IconButton } from "@mui/material";
+import { Button, ButtonGroup } from "@mui/material";
 import { Link } from "react-router-dom";
 
 const MenuBtn = (props: any) => {
@@ -8,19 +8,32 @@ const MenuBtn = (props: any) => {
       sx={{
         flexGrow: 1,
         display: { xs: "none", md: "flex" },
-        m: "0 auto",
+        flexDirection: "row",
+        justifyContent: "center",
       }}
     >
       {pages.map((page: any) => (
         <Button
           key={page.name}
-          sx={{ my: 2, color: "white", display: "block" }}
+          sx={{
+            my: 2,
+            color: "white",
+            display: "block",
+            "&:hover": {
+              backgroundColor: "#333",
+            },
+          }}
         >
-          <IconButton aria-label="Buttons">{page.icon}</IconButton>
           <Link
             to={page.link}
-            style={{ textDecoration: "none", color: "white" }}
+            style={{
+              display: "flex",
+              flexDirection: "row",
+              textDecoration: "none",
+              color: "white",
+            }}
           >
+            {page.icon}
             {page.name}
           </Link>
         </Button>

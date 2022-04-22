@@ -1,4 +1,4 @@
-import { Box, IconButton, ListItemIcon, Menu, MenuItem } from "@mui/material";
+import { Box, IconButton, Menu, MenuItem } from "@mui/material";
 import MenuIcon from "@mui/icons-material/Menu";
 import { useState, MouseEvent } from "react";
 import { Link } from "react-router-dom";
@@ -45,11 +45,16 @@ const DropDownBtn = (props: any) => {
       >
         {pages.map((page: any) => (
           <MenuItem key={page.name} onClick={handleCloseNavMenu}>
-            <ListItemIcon>{page.icon}</ListItemIcon>
             <Link
-              style={{ textDecoration: "none", color: "rgb(9,105,218)" }}
+              style={{
+                display: "flex",
+                flexDirection: "row",
+                textDecoration: "none",
+                color: "rgb(9,105,218)",
+              }}
               to={page.link}
             >
+              {page.icon}
               {page.name}
             </Link>
           </MenuItem>
