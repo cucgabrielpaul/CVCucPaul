@@ -1,4 +1,4 @@
-import { Button, ButtonGroup } from "@mui/material";
+import { Button, ButtonGroup, IconButton } from "@mui/material";
 import { Link } from "react-router-dom";
 
 const MenuBtn = (props: any) => {
@@ -16,6 +16,7 @@ const MenuBtn = (props: any) => {
           key={page.name}
           sx={{ my: 2, color: "white", display: "block" }}
         >
+          <IconButton aria-label="Buttons">{page.icon}</IconButton>
           <Link
             to={page.link}
             style={{ textDecoration: "none", color: "white" }}
