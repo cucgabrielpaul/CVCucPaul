@@ -5,14 +5,15 @@ import { Link } from "react-router-dom";
 
 const DropDownBtn = (props: any) => {
   const { pages } = props;
-  console.log(pages);
   const [anchorElNav, setAnchorElNav] = useState<null | HTMLElement>(null);
+
   const handleOpenNavMenu = (event: MouseEvent<HTMLElement>) => {
     setAnchorElNav(event.currentTarget);
   };
   const handleCloseNavMenu = () => {
     setAnchorElNav(null);
   };
+
   return (
     <Box sx={{ flexGrow: 1, display: { xs: "flex", md: "none" } }}>
       <IconButton
