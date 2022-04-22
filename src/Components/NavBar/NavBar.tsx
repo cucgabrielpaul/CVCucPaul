@@ -53,8 +53,8 @@ const pages = [
 const NavBar = () => {
   return (
     <AppBar position="static">
-      <Container maxWidth="xl">
-        <Toolbar disableGutters>
+      <Container maxWidth="xl" sx={{ margin: "0 50px" }}>
+        <Toolbar>
           <Typography
             variant="h6"
             noWrap

@@ -135,7 +135,7 @@ const DetailsCard = () => {
             display: "flex",
             flexDirectionr: "row",
             flexWrap: "wrap",
-            justifyContent: "space-evenly",
+            justifyContent: "space-around",
           }}
         >
           <MyAvatar />

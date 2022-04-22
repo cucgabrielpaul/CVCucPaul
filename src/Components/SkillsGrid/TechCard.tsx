@@ -8,7 +8,6 @@ import {
 import { IconContext } from "@react-icons/all-files";
 
 const TechCard = (props: any) => {
-  console.log(props);
   const { button, key, component, href, icon, primary, secondary, iconColor } =
     props;
   return (
