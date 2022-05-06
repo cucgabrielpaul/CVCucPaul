@@ -1,6 +1,6 @@
 import { SiGooglemaps } from "@react-icons/all-files/si/SiGooglemaps";
 import { AiFillYahoo } from "@react-icons/all-files/ai/AiFillYahoo";
-import { FcCallback } from "@react-icons/all-files/fc/FcCallback";
+import { MdPhone } from "@react-icons/all-files/md/MdPhone";
 import { FaBabyCarriage } from "@react-icons/all-files/fa/FaBabyCarriage";
 
 const contactInfos = [
@@ -12,6 +12,7 @@ const contactInfos = [
     key: "Address",
     component: "",
     href: "",
+    color: "",
   },
   {
     icon: <FaBabyCarriage />,
@@ -21,6 +22,7 @@ const contactInfos = [
     key: "BornDate",
     component: "",
     href: "",
+    color: "",
   },
   {
     icon: <AiFillYahoo />,
@@ -30,15 +32,17 @@ const contactInfos = [
     key: "Email",
     component: "a",
     href: "mailto:cucgabrielpaul@yahoo.com",
+    color: "",
   },
   {
-    icon: <FcCallback />,
+    icon: <MdPhone />,
     primary: "0755339912",
     secondary: "",
     button: true,
     key: "PhoneNo",
     component: "a",
     href: "tel:+40755339912",
+    color: "",
   },
 ];
 export default contactInfos;

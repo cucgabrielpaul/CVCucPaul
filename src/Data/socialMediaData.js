@@ -12,6 +12,7 @@ const socialMedia = [
     key: "Facebook",
     component: "a",
     href: "https://www.facebook.com/cucgabrielpaul/",
+    color: "rgb(9,124,235)",
   },
   {
     icon: <SiInstagram />,
@@ -21,6 +22,7 @@ const socialMedia = [
     key: "Instagram",
     component: "a",
     href: "https://www.instagram.com/cucgabrielpaul/",
+    color: "",
   },
   {
     icon: <SiLinkedin />,
@@ -30,6 +32,7 @@ const socialMedia = [
     key: "LinkedIn",
     component: "a",
     href: "https://www.linkedin.com/in/cucgabrielpaul/",
+    color: "",
   },
   {
     icon: <SiGithub />,
@@ -39,6 +42,7 @@ const socialMedia = [
     key: "GitHub",
     component: "a",
     href: "https://github.com/cucgabrielpaul",
+    color: "",
   },
 ];
 export default socialMedia;
