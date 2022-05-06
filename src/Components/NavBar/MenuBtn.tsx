@@ -22,16 +22,17 @@ const MenuBtn = (props: any) => {
             "&:hover": {
               backgroundColor: "#333",
             },
+            borderRadius: "4px",
           }}
         >
           <Link
-            to={page.link}
             style={{
               display: "flex",
               flexDirection: "row",
               textDecoration: "none",
               color: "white",
             }}
+            to={page.link}
           >
             {page.icon}
             {page.name}

@@ -1,12 +1,14 @@
-import React from "react";
+import { Box } from "@mui/material";
+import DetailsCard from "../Components/Details/DetailsCard";
 import NavBar from "../Components/NavBar/NavBar";
 
 const AboutMe = () => {
   return (
-    <div>
+    <Box>
+      <DetailsCard />
       <NavBar />
       {"AboutMe"}
-    </div>
+    </Box>
   );
 };
 export default AboutMe;

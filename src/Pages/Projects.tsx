@@ -1,12 +1,14 @@
-import React from "react";
+import { Box } from "@mui/material";
+import DetailsCard from "../Components/Details/DetailsCard";
 import NavBar from "../Components/NavBar/NavBar";
 
 const Projects = () => {
   return (
-    <div>
+    <Box>
+      <DetailsCard />
       <NavBar />
       {"Projects"}
-    </div>
+    </Box>
   );
 };
 export default Projects;

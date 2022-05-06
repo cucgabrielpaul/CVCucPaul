@@ -1,14 +1,14 @@
-import React from "react";
+import { Box } from "@mui/material";
 import DetailsCard from "../Components/Details/DetailsCard";
 import NavBar from "../Components/NavBar/NavBar";
 
 const Home = () => {
   return (
-    <div>
+    <Box>
       <DetailsCard />
       <NavBar />
       {"Home"}
-    </div>
+    </Box>
   );
 };
 export default Home;

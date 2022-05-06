@@ -6,6 +6,7 @@ import WorkExperience from "./Pages/WorkExperience";
 import Projects from "./Pages/Projects";
 import Repositorys from "./Pages/Repositorys";
 import DigitalSkills from "./Pages/DigitalSkills";
+import DownloadCV from "./Pages/DownloadCV";
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
         <Route path="/Projects" element={<Projects />} />
         <Route path="/Repositorys" element={<Repositorys />} />
         <Route path="/DigitalSkills" element={<DigitalSkills />} />
+        <Route path="/DownloadCV" element={<DownloadCV />} />
       </Routes>
     </Router>
   );

@@ -1,15 +1,15 @@
 import { Box } from "@mui/material";
 import DetailsCard from "../Components/Details/DetailsCard";
 import NavBar from "../Components/NavBar/NavBar";
-import RepoDetails from "../Components/RepoPage/RepoDetails";
 
-const Repositorys = () => {
+const DownloadCV = () => {
   return (
     <Box>
       <DetailsCard />
       <NavBar />
-      <RepoDetails />
+      {"DownloadCV"}
     </Box>
   );
 };
-export default Repositorys;
+
+export default DownloadCV;

@@ -1,12 +1,15 @@
-import React from "react";
+import { Box } from "@mui/material";
+import DetailsCard from "../Components/Details/DetailsCard";
 import NavBar from "../Components/NavBar/NavBar";
+import WorkExp from "../Components/WorkExp/WorkExp";
 
 const WorkExperience = () => {
   return (
-    <div>
+    <Box>
+      <DetailsCard />
       <NavBar />
-      {"WorkExperience"}
-    </div>
+      <WorkExp />
+    </Box>
   );
 };
 export default WorkExperience;

@@ -6,11 +6,13 @@ import { useEffect, useState } from "react";
 
 const RepoDetails = () => {
   const [repos, setRepos] = useState<any>([]);
+
   useEffect(() => {
     fetch("https://api.github.com/users/cucgabrielpaul/repos").then(
       (response) => response.json().then((data) => setRepos(data))
     );
   }, []);
+
   /*  const { data, error, loading } = useAxios({
     url: "https://api.github.com/users/cucgabrielpaul/repos",
   });

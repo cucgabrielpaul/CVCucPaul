@@ -1,13 +1,15 @@
-import { Fragment } from "react";
+import { Box } from "@mui/material";
+import DetailsCard from "../Components/Details/DetailsCard";
 import NavBar from "../Components/NavBar/NavBar";
 import TechGrid from "../Components/SkillsPage/TechGrid";
 
 const DigitalSkills = () => {
   return (
-    <Fragment>
+    <Box>
+      <DetailsCard />
       <NavBar />
       <TechGrid />
-    </Fragment>
+    </Box>
   );
 };
 export default DigitalSkills;

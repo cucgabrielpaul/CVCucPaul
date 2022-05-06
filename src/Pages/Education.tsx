@@ -1,12 +1,15 @@
-import React from "react";
+import { Box } from "@mui/material";
+import DetailsCard from "../Components/Details/DetailsCard";
+import EducationDetails from "../Components/Education/EducationDetails";
 import NavBar from "../Components/NavBar/NavBar";
 
 const Education = () => {
   return (
-    <div>
+    <Box>
+      <DetailsCard />
       <NavBar />
-      {"Education"}
-    </div>
+      <EducationDetails />
+    </Box>
   );
 };
 
