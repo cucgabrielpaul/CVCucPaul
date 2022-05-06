@@ -54,6 +54,7 @@ const DropDownBtn = (props: any) => {
                 color: "rgb(9,105,218)",
               }}
               to={page.link}
+              download={true}
             >
               {page.icon}
               {page.name}
