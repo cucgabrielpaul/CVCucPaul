@@ -10,7 +10,7 @@ const pages = [
   {
     icon: <AccountCircleRoundedIcon />,
     shortName: "Me",
-    longName: "About Me",
+    longName: " About Me",
     link: "/",
   },
   {

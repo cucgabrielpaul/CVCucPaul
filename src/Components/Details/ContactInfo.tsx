@@ -4,7 +4,6 @@ import {
   List,
   ListItem,
   ListItemAvatar,
-  ListItemText,
   Typography,
 } from "@mui/material";
 import { IconContext } from "@react-icons/all-files";

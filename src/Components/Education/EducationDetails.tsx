@@ -3,7 +3,6 @@ import {
   List,
   ListItem,
   ListItemAvatar,
-  ListItemText,
   Typography,
 } from "@mui/material";
 import { Box } from "@mui/system";

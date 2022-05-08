@@ -1,10 +1,9 @@
 import { Button, ButtonGroup } from "@mui/material";
-import { useState } from "react";
 import { Link } from "react-router-dom";
 
 const MenuBtn = (props: any) => {
   const { pages } = props;
-  console.log(window.innerWidth);
+
   return (
     <ButtonGroup
       sx={{
@@ -20,9 +19,11 @@ const MenuBtn = (props: any) => {
           sx={{
             my: 2,
             color: "white",
+            border: "0",
+            borderRadius: "0",
             display: "block",
             "&:hover": {
-              backgroundColor: "red",
+              border: "1px solid white",
             },
           }}
         >
