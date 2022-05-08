@@ -1,13 +1,24 @@
 import { Box } from "@mui/material";
 import DetailsCard from "../Components/Details/DetailsCard";
 import NavBar from "../Components/NavBar/NavBar";
-
+import aboutme from "../Assets/Image/Backgrounds/aboutme.jpg";
+import AboutMeInfo from "../Components/AboutMe/AboutMeInfo";
 const AboutMe = () => {
   return (
-    <Box>
+    <Box
+      sx={{
+        height: "100vh",
+        width: "100%",
+        backgroundImage: `url(${aboutme})`,
+        backgroundSize: "container",
+        backgroundRepeat: " no-repeat",
+        backgroundPosition: "50% 30%",
+        backgroundAttachment: "fixed",
+      }}
+    >
       <DetailsCard />
       <NavBar />
-      {"AboutMe"}
+      <AboutMeInfo />
     </Box>
   );
 };

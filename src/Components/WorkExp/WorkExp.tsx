@@ -7,22 +7,10 @@ import {
   Typography,
 } from "@mui/material";
 import workExp from "../../Data/workExpData";
-import workexp from "../../Assets/Image/Backgrounds/workexp.jpg";
 
 const WorkExp = () => {
   return (
-    <List
-      sx={{
-        height: "100vh",
-        paddingLeft: "50%",
-        bgcolor: "background.paper",
-        backgroundImage: `url(${workexp})`,
-        backgroundSize: "cover",
-        backgroundRepeat: " no-repeat",
-        backgroundPosition: "top",
-        backgroundAttachment: "fixed",
-      }}
-    >
+    <List>
       {workExp.map((item: any, index: number) => (
         <ListItem
           button={item.button}
@@ -32,6 +20,7 @@ const WorkExp = () => {
           sx={{
             display: "flex",
             flexDirection: "row",
+            justifyContent: "center",
           }}
         >
           <ListItemAvatar>
@@ -42,6 +31,7 @@ const WorkExp = () => {
               display: "flex",
               flexDirection: "column",
               alignItems: "start",
+              width: "400px",
             }}
           >
             <Typography>{`${item.employer} from ${item.city}`}</Typography>

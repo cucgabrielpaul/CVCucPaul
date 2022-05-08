@@ -1,23 +1,11 @@
 import { Grid } from "@mui/material";
 import { Box } from "@mui/system";
 import sites from "../../Data/sitesData";
-import projects from "../../Assets/Image/Backgrounds/projects.jpg";
 import SiteItem from "./SiteItem";
 
 const Sites = () => {
   return (
-    <Box
-      sx={{
-        width: "100%",
-        height: "100vh",
-        position: "absolute",
-        backgroundImage: `url(${projects})`,
-        backgroundSize: "cover",
-        backgroundRepeat: " no-repeat",
-        backgroundPosition: "top",
-        backgroundAttachment: "fixed",
-      }}
-    >
+    <Box>
       <Grid
         container
         rowSpacing={{ xs: 1, sm: 2, md: 3 }}

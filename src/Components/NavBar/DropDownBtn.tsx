@@ -18,7 +18,6 @@ const DropDownBtn = (props: any) => {
     <Box
       sx={{
         marginLeft: "50px",
-        flexGrow: 1,
         display: { xs: "flex", md: "none" },
       }}
     >
@@ -63,7 +62,7 @@ const DropDownBtn = (props: any) => {
               download={true}
             >
               {page.icon}
-              {page.name}
+              {page.longName}
             </Link>
           </MenuItem>
         ))}

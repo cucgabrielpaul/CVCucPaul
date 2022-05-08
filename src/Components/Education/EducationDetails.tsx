@@ -8,20 +8,12 @@ import {
 } from "@mui/material";
 import { Box } from "@mui/system";
 import educationDet from "../../Data/educationDetData";
-import education from "../../Assets/Image/Backgrounds/education.jpg";
 
 const EducationDetails = () => {
   return (
     <List
       sx={{
-        height: "100vh",
         paddingLeft: "5%",
-        bgcolor: "background.paper",
-        backgroundImage: `url(${education})`,
-        backgroundSize: "cover",
-        backgroundRepeat: " no-repeat",
-        backgroundPosition: "50% 1%",
-        backgroundAttachment: "fixed",
       }}
     >
       {educationDet.map((item: any, index: number) => (
