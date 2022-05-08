@@ -9,37 +9,44 @@ import DownloadIcon from "@mui/icons-material/Download";
 const pages = [
   {
     icon: <AccountCircleRoundedIcon />,
-    name: "AboutMe",
+    shortName: "Me",
+    longName: "About Me",
     link: "/",
   },
   {
     icon: <SchoolRoundedIcon />,
-    name: "Education",
+    shortName: "Education",
+    longName: "Education",
     link: "/Education",
   },
   {
     icon: <WorkHistoryRoundedIcon />,
-    name: "Work Experince",
+    shortName: "Work",
+    longName: "Work Experience",
     link: "/WorkExperience",
   },
   {
     icon: <ImportantDevicesRoundedIcon />,
-    name: "Projects",
+    shortName: "Projects",
+    longName: "Projects",
     link: "/Projects",
   },
   {
     icon: <TerminalRoundedIcon />,
-    name: "Repositorys",
+    shortName: "Repos",
+    longName: "Repositorys",
     link: "/Repositorys",
   },
   {
     icon: <CodeRoundedIcon />,
-    name: "Digital Skills",
+    shortName: "Skills",
+    longName: "Skills",
     link: "/DigitalSkills",
   },
   {
     icon: <DownloadIcon />,
-    name: "Download CV",
+    shortName: "CV",
+    longName: "Download CV",
     link: "/DownloadCV",
   },
 ];

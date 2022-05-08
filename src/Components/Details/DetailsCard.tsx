@@ -54,6 +54,7 @@ const DetailsCard = () => {
         onClick={handleExpandClick}
         aria-expanded={expanded}
         aria-label="More Info"
+        sx={{ zIndex: "2" }}
       >
         <KeyboardDoubleArrowDownIcon sx={{ color: "white" }} />
       </ExpandMore>

@@ -1,8 +1,10 @@
 import { Button, ButtonGroup } from "@mui/material";
+import { useState } from "react";
 import { Link } from "react-router-dom";
 
 const MenuBtn = (props: any) => {
   const { pages } = props;
+  console.log(window.innerWidth);
   return (
     <ButtonGroup
       sx={{
@@ -34,7 +36,7 @@ const MenuBtn = (props: any) => {
             to={page.link}
           >
             {page.icon}
-            {page.name}
+            {window.innerWidth > 1300 ? page.longName : page.shortName}
           </Link>
         </Button>
       ))}

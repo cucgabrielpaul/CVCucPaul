@@ -20,7 +20,7 @@ const EducationDetails = () => {
         backgroundImage: `url(${education})`,
         backgroundSize: "cover",
         backgroundRepeat: " no-repeat",
-        backgroundPosition: "top",
+        backgroundPosition: "50% 1%",
         backgroundAttachment: "fixed",
       }}
     >

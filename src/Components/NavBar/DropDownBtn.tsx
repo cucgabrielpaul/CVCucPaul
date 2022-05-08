@@ -15,7 +15,13 @@ const DropDownBtn = (props: any) => {
   };
 
   return (
-    <Box sx={{ flexGrow: 1, display: { xs: "flex", md: "none" } }}>
+    <Box
+      sx={{
+        marginLeft: "50px",
+        flexGrow: 1,
+        display: { xs: "flex", md: "none" },
+      }}
+    >
       <IconButton
         size="large"
         aria-label="account of current user"
