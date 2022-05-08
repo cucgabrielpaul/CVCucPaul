@@ -1,6 +1,18 @@
 import SIIT from "../Assets/Image/EducationLogo/SIIT.jpg";
 import UTCN from "../Assets/Image/EducationLogo/UTCN.jpg";
+import ANRE from "../Assets/Image/EducationLogo/ANRE.jpg";
+
 const educationDet = [
+  {
+    logo: ANRE,
+    university: "National Energy Reglementation Authority",
+    college: "ANRE IIIA-IIIB",
+    description: "",
+    startDate: "09/05/2021",
+    endDate: "09/05/2021",
+    city: "Cluj-Napoca",
+    country: "Romania",
+  },
   {
     logo: SIIT,
     university: "Informal School of IT",

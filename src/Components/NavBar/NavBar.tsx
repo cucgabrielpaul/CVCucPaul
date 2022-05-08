@@ -5,29 +5,38 @@ import Container from "@mui/material/Container";
 import DropDownBtn from "./DropDownBtn";
 import MenuBtn from "./MenuBtn";
 import pages from "../../Data/pagesData";
+import navBg from "../../Assets/Video/navBg.gif";
 
 const NavBar = () => {
   return (
-    <AppBar position="static">
+    <AppBar position="static" sx={{ backgroundImage: `url(${navBg})` }}>
       <Container maxWidth="xl" sx={{ margin: "0 50px" }}>
         <Toolbar>
           <Typography
-            variant="h6"
+            variant="h4"
             noWrap
             component="div"
-            sx={{ mr: 2, display: { xs: "none", md: "flex" } }}
+            sx={{
+              fontFamily: "Gabriola",
+              mr: 2,
+              display: { xs: "none", md: "flex" },
+            }}
           >
-            Cuc PauL
+            CV Cuc Paul
           </Typography>
 
           <DropDownBtn pages={pages} />
           <Typography
-            variant="h6"
+            variant="h4"
             noWrap
             component="div"
-            sx={{ flexGrow: 1, display: { xs: "flex", md: "none" } }}
+            sx={{
+              fontFamily: "Gabriola",
+              flexGrow: 1,
+              display: { xs: "flex", md: "none" },
+            }}
           >
-            Cuc PauL
+            CV Cuc Paul
           </Typography>
           <MenuBtn pages={pages} />
         </Toolbar>

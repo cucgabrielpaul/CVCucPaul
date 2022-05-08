@@ -17,7 +17,6 @@ const TechCard = (props: any) => {
           <Avatar
             sx={{
               background: "none",
-              color: "red",
               height: "100px",
               width: "100px",
             }}

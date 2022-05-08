@@ -11,7 +11,7 @@ const MyAvatar = () => {
         src={img}
         sx={{ borderRadius: "50%", height: "200px", width: "200px" }}
       />
-      <Typography variant="h5" color="text.secondary">
+      <Typography variant="h4" color="white" sx={{ fontFamily: "Gabriola" }}>
         Cuc Gabriel Paul
       </Typography>
     </CardActions>

@@ -20,9 +20,8 @@ const MenuBtn = (props: any) => {
             color: "white",
             display: "block",
             "&:hover": {
-              backgroundColor: "#333",
+              backgroundColor: "red",
             },
-            borderRadius: "4px",
           }}
         >
           <Link

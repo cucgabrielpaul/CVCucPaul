@@ -6,25 +6,16 @@ import {
   ListItemText,
 } from "@mui/material";
 
-const RepoItem = (props: any) => {
-  const {
-    name,
-    id,
-    description,
-    topics,
-    created_at,
-    updated_at,
-    html_url,
-    visibility,
-  } = props;
-  console.log(description);
+const SiteItem = (props: any) => {
+  console.log(props);
+  const { name, id, url, screenshot_url } = props;
   return (
     <List sx={{ width: "100%", maxWidth: 360 }}>
-      <ListItem button key={id} component="a" href={html_url}>
+      <ListItem button key={id} component="a" href={url}>
         <ListItemAvatar>
           <Avatar
             alt={name}
-            src={description}
+            src={screenshot_url}
             sx={{
               borderRadius: "2px",
               height: "80px",
@@ -32,10 +23,10 @@ const RepoItem = (props: any) => {
             }}
           ></Avatar>
         </ListItemAvatar>
-        <ListItemText primary={name} secondary={topics.join(", ")} />
+        <ListItemText primary={name} secondary={""} />
       </ListItem>
     </List>
   );
 };
 
-export default RepoItem;
+export default SiteItem;

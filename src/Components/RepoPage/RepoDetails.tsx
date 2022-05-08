@@ -3,6 +3,7 @@ import Box from "@mui/material/Box";
 import { useAxios } from "use-axios-client";
 import RepoItem from "./RepoItem";
 import { useEffect, useState } from "react";
+import repository from "../../Assets/Video/tech.gif";
 
 const RepoDetails = () => {
   const [repos, setRepos] = useState<any>([]);
@@ -21,7 +22,17 @@ const RepoDetails = () => {
   if (error) console.log("Error!"); */
 
   return (
-    <Box sx={{ width: "100%" }}>
+    <Box
+      sx={{
+        height: "100vh",
+        position: "absolute",
+        backgroundImage: `url(${repository})`,
+        backgroundSize: "cover",
+        backgroundRepeat: " no-repeat",
+        backgroundPosition: "top",
+        backgroundAttachment: "fixed",
+      }}
+    >
       <Grid
         container
         rowSpacing={{ xs: 1, sm: 2, md: 3 }}

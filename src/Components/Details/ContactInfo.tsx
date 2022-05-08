@@ -1,17 +1,19 @@
 import {
   Avatar,
+  Box,
   List,
   ListItem,
   ListItemAvatar,
   ListItemText,
+  Typography,
 } from "@mui/material";
-import { IconContext } from "react-icons";
+import { IconContext } from "@react-icons/all-files";
 
 const ContactInfo = (props: any) => {
   const { infos } = props;
   console.log(infos);
   return (
-    <List sx={{ width: "100%", maxWidth: 360, bgcolor: "background.paper" }}>
+    <List sx={{ width: "100%", maxWidth: 360 }}>
       {infos.map((info: any) => (
         <ListItem
           button={info.button}
@@ -20,13 +22,29 @@ const ContactInfo = (props: any) => {
           href={info.href}
         >
           <ListItemAvatar>
-            <Avatar>
-              <IconContext.Provider value={{ color: info.color, size: "70px" }}>
+            <Avatar
+              sx={{
+                background: "none",
+                height: "50px",
+                width: "50px",
+              }}
+            >
+              <IconContext.Provider value={{ color: info.color, size: "35px" }}>
                 {info.icon}
               </IconContext.Provider>
             </Avatar>
           </ListItemAvatar>
-          <ListItemText primary={info.primary} secondary={info.secondary} />
+          <Box
+            sx={{
+              display: "flex",
+              flexDirection: "column",
+              alignItems: "start",
+              paddingLeft: "20px",
+            }}
+          >
+            <Typography color="white">{info.primary}</Typography>
+            <Typography color="white">{info.secondary}</Typography>
+          </Box>
         </ListItem>
       ))}
     </List>

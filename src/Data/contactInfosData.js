@@ -12,7 +12,7 @@ const contactInfos = [
     key: "Address",
     component: "",
     href: "",
-    color: "",
+    color: "rgb(203,51,62)",
   },
   {
     icon: <FaBabyCarriage />,
@@ -22,7 +22,7 @@ const contactInfos = [
     key: "BornDate",
     component: "",
     href: "",
-    color: "",
+    color: "rgb(9,105,218)",
   },
   {
     icon: <AiFillYahoo />,
@@ -32,7 +32,7 @@ const contactInfos = [
     key: "Email",
     component: "a",
     href: "mailto:cucgabrielpaul@yahoo.com",
-    color: "",
+    color: "rgb(100,15,108)",
   },
   {
     icon: <MdPhone />,
@@ -42,7 +42,7 @@ const contactInfos = [
     key: "PhoneNo",
     component: "a",
     href: "tel:+40755339912",
-    color: "",
+    color: "rgb(4,170,109)",
   },
 ];
 export default contactInfos;

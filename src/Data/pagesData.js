@@ -1,4 +1,3 @@
-import HomeIcon from "@mui/icons-material/Home";
 import AccountCircleRoundedIcon from "@mui/icons-material/AccountCircleRounded";
 import SchoolRoundedIcon from "@mui/icons-material/SchoolRounded";
 import WorkHistoryRoundedIcon from "@mui/icons-material/WorkHistoryRounded";
@@ -9,14 +8,9 @@ import DownloadIcon from "@mui/icons-material/Download";
 
 const pages = [
   {
-    icon: <HomeIcon />,
-    name: "Home",
-    link: "/",
-  },
-  {
     icon: <AccountCircleRoundedIcon />,
     name: "AboutMe",
-    link: "/AboutMe",
+    link: "/",
   },
   {
     icon: <SchoolRoundedIcon />,

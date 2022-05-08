@@ -8,10 +8,22 @@ import {
 } from "@mui/material";
 import { Box } from "@mui/system";
 import educationDet from "../../Data/educationDetData";
+import education from "../../Assets/Image/Backgrounds/education.jpg";
 
 const EducationDetails = () => {
   return (
-    <List sx={{ width: "100%", bgcolor: "background.paper" }}>
+    <List
+      sx={{
+        height: "100vh",
+        paddingLeft: "5%",
+        bgcolor: "background.paper",
+        backgroundImage: `url(${education})`,
+        backgroundSize: "cover",
+        backgroundRepeat: " no-repeat",
+        backgroundPosition: "top",
+        backgroundAttachment: "fixed",
+      }}
+    >
       {educationDet.map((item: any, index: number) => (
         <ListItem
           button={item.button}
@@ -24,18 +36,27 @@ const EducationDetails = () => {
           }}
         >
           <ListItemAvatar>
-            <Avatar src={item.logo} alt="Logo" />
+            <Avatar
+              src={item.logo}
+              alt="Logo"
+              sx={{
+                borderRadius: "0",
+                width: "60px",
+                height: "60px",
+              }}
+            />
           </ListItemAvatar>
           <Box
             sx={{
               display: "flex",
               flexDirection: "column",
-              alignItems: "center",
+              alignItems: "start",
+              paddingLeft: "20px",
             }}
           >
-            <Typography>{`${item.university} from ${item.city}`}</Typography>
-            <Typography>{item.college}</Typography>
-            <Typography>{`Data: ${item.startDate} - ${item.endDate}`}</Typography>
+            <Typography color="white">{`${item.university} from ${item.city}`}</Typography>
+            <Typography color="white">{item.college}</Typography>
+            <Typography color="white">{`Date: ${item.startDate} - ${item.endDate}`}</Typography>
           </Box>
         </ListItem>
       ))}
