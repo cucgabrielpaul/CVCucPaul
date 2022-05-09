@@ -40,7 +40,7 @@ const pages = [
   {
     icon: <CodeRoundedIcon />,
     shortName: "Skills",
-    longName: "Skills",
+    longName: "Digital Skills",
     link: "/DigitalSkills",
   },
   {
