@@ -8,8 +8,8 @@ const Projects = () => {
   return (
     <Box
       sx={{
-        height: "100vh",
         width: "100%",
+        minHeight: "110vh",
         backgroundImage: `url(${projects})`,
         backgroundSize: "container",
         backgroundRepeat: " no-repeat",

@@ -12,6 +12,7 @@ const socialMedia = [
     key: "Facebook",
     component: "a",
     href: "https://www.facebook.com/cucgabrielpaul/",
+    target: "_blank",
     color: "rgb(9,124,235)",
   },
   {
@@ -22,6 +23,7 @@ const socialMedia = [
     key: "Instagram",
     component: "a",
     href: "https://www.instagram.com/cucgabrielpaul/",
+    target: "_blank",
     color: "rgb(219,18,50)",
   },
   {
@@ -32,6 +34,7 @@ const socialMedia = [
     key: "LinkedIn",
     component: "a",
     href: "https://www.linkedin.com/in/cucgabrielpaul/",
+    target: "_blank",
     color: "rgb(2,112,173)",
   },
   {
@@ -42,6 +45,7 @@ const socialMedia = [
     key: "GitHub",
     component: "a",
     href: "https://github.com/cucgabrielpaul",
+    target: "_blank",
     color: "white",
   },
 ];

@@ -8,8 +8,8 @@ const Education = () => {
   return (
     <Box
       sx={{
-        height: "100vh",
         width: "100%",
+        minHeight: "110vh",
         backgroundImage: `url(${education})`,
         backgroundSize: "cover",
         backgroundRepeat: " no-repeat",

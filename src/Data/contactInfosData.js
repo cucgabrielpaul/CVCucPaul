@@ -12,6 +12,7 @@ const contactInfos = [
     key: "Address",
     component: "",
     href: "",
+    target: "",
     color: "rgb(203,51,62)",
   },
   {
@@ -22,6 +23,7 @@ const contactInfos = [
     key: "BornDate",
     component: "",
     href: "",
+    target: "",
     color: "rgb(9,105,218)",
   },
   {
@@ -32,6 +34,7 @@ const contactInfos = [
     key: "Email",
     component: "a",
     href: "mailto:cucgabrielpaul@yahoo.com",
+    target: "",
     color: "rgb(100,15,108)",
   },
   {
@@ -42,6 +45,7 @@ const contactInfos = [
     key: "PhoneNo",
     component: "a",
     href: "tel:+40755339912",
+    target: "",
     color: "rgb(4,170,109)",
   },
 ];

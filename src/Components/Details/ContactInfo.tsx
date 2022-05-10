@@ -10,7 +10,7 @@ import { IconContext } from "@react-icons/all-files";
 
 const ContactInfo = (props: any) => {
   const { infos } = props;
-  console.log(infos);
+
   return (
     <List sx={{ width: "100%", maxWidth: 360 }}>
       {infos.map((info: any) => (
@@ -19,6 +19,7 @@ const ContactInfo = (props: any) => {
           key={info.key}
           component={info.component}
           href={info.href}
+          target={info.target}
         >
           <ListItemAvatar>
             <Avatar

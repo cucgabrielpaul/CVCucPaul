@@ -1,9 +1,10 @@
 import {
   Avatar,
+  Box,
   List,
   ListItem,
   ListItemAvatar,
-  ListItemText,
+  Typography,
 } from "@mui/material";
 
 const RepoItem = (props: any) => {
@@ -17,10 +18,10 @@ const RepoItem = (props: any) => {
     html_url,
     visibility,
   } = props;
-  console.log(description);
+
   return (
     <List sx={{ width: "100%", maxWidth: 360 }}>
-      <ListItem button key={id} component="a" href={html_url}>
+      <ListItem button key={id} component="a" href={html_url} target="_blank">
         <ListItemAvatar>
           <Avatar
             alt={name}
@@ -32,7 +33,18 @@ const RepoItem = (props: any) => {
             }}
           ></Avatar>
         </ListItemAvatar>
-        <ListItemText primary={name} secondary={topics.join(", ")} />
+        <Box
+          sx={{
+            display: "flex",
+            flexDirection: "column",
+            alignItems: "start",
+            margin: "0 10px",
+            width: "400px",
+          }}
+        >
+          <Typography color="white">{name}</Typography>
+          <Typography color="white">{`${topics.join(", ")}`}</Typography>
+        </Box>
       </ListItem>
     </List>
   );

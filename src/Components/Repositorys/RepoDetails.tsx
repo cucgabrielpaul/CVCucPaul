@@ -1,5 +1,4 @@
 import Grid from "@mui/material/Grid";
-import Box from "@mui/material/Box";
 import RepoItem from "./RepoItem";
 import { useEffect, useState } from "react";
 
@@ -20,19 +19,17 @@ const RepoDetails = () => {
   if (error) console.log("Error!"); */
 
   return (
-    <Box>
-      <Grid
-        container
-        rowSpacing={{ xs: 1, sm: 2, md: 3 }}
-        columnSpacing={{ xs: 1, sm: 2, md: 3 }}
-      >
-        {repos.map((repo: any) => (
-          <Grid item xs={12} sm={6} md={4}>
-            <RepoItem key={repo.id} {...repo} />
-          </Grid>
-        ))}
-      </Grid>
-    </Box>
+    <Grid
+      container
+      rowSpacing={{ xs: 1, sm: 2, md: 3 }}
+      columnSpacing={{ xs: 1, sm: 2, md: 3 }}
+    >
+      {repos.map((repo: any) => (
+        <Grid item xs={12} sm={6} md={4}>
+          <RepoItem key={repo.id} {...repo} />
+        </Grid>
+      ))}
+    </Grid>
   );
 };
 
