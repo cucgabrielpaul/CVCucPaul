@@ -5,6 +5,9 @@ import { Document, Page } from "react-pdf/dist/esm/entry.webpack5";
 import ReactDownLoad from "reactjs-file-downloader";
 import PDF from "../../Assets/Docs/CucGabrielPaul.pdf";
 import "./style.scss";
+import { AiOutlineArrowRight } from "@react-icons/all-files/ai/AiOutlineArrowRight.esm";
+import { AiOutlineArrowLeft } from "@react-icons/all-files/ai/AiOutlineArrowLeft.esm";
+import { RiDownloadLine } from "@react-icons/all-files/ri/RiDownloadLine.esm";
 
 const CvViewer = () => {
   const [numPages, setNumPages] = useState(null);
@@ -33,16 +36,23 @@ const CvViewer = () => {
         flexDirection: "column",
       }}
     >
-      <Box sx={{ display: "flex", justifyContent: "center" }}>
-        <Button onClick={prevPg}>Prev</Button>
+      <Box sx={{ display: "flex", justifyContent: "center", margin: "20px 0" }}>
+        <Button onClick={prevPg}>
+          <AiOutlineArrowLeft />
+          {"Back"}
+        </Button>
         <Button
           onClick={() => {
             ReactDownLoad(PDF, "GET", "CV-CucGabrielPaul.pdf");
           }}
         >
-          Download
+          <RiDownloadLine />
+          {"Download"}
         </Button>
-        <Button onClick={nextPg}>Next</Button>
+        <Button onClick={nextPg}>
+          {"Next"}
+          <AiOutlineArrowRight />
+        </Button>
       </Box>
 
       <Typography variant="h6" alignSelf="center">
@@ -55,7 +65,24 @@ const CvViewer = () => {
         file={PDF}
         onLoadSuccess={onDocumentLoadSuccess}
       >
-        <Page size="A3" pageNumber={pageNumber} />
+        <Page
+          width={
+            window.innerWidth > 900
+              ? 800
+              : window.innerWidth > 800
+              ? 700
+              : window.innerWidth > 700
+              ? 600
+              : window.innerWidth > 600
+              ? 500
+              : window.innerWidth > 500
+              ? 500
+              : window.innerWidth > 400
+              ? 400
+              : 320
+          }
+          pageNumber={pageNumber}
+        />
       </Document>
     </Box>
   );

@@ -11,7 +11,7 @@ const TechCard = (props: any) => {
   const { button, key, component, href, icon, primary, secondary, iconColor } =
     props;
   return (
-    <List sx={{ width: "100%", maxWidth: 360, bgcolor: "background.paper" }}>
+    <List sx={{ width: "100%", maxWidth: 360 }}>
       <ListItem button={button} key={key} component={component} href={href}>
         <ListItemAvatar>
           <Avatar
