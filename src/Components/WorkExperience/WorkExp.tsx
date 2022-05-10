@@ -20,7 +20,7 @@ const WorkExp = () => {
           sx={{
             display: "flex",
             flexDirection: "row",
-            justifyContent: "center",
+            marginLeft: "60%",
           }}
         >
           <ListItemAvatar>

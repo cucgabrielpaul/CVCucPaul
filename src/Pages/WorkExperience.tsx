@@ -13,7 +13,7 @@ const WorkExperience = () => {
         backgroundImage: `url(${workexp})`,
         backgroundSize: "cover",
         backgroundRepeat: "repeat-y",
-        backgroundPosition: "top",
+        backgroundPosition: "50% 90%",
         backgroundAttachment: "fixed",
       }}
     >
