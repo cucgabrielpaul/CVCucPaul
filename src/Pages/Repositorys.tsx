@@ -13,7 +13,7 @@ const Repositorys = () => {
         backgroundImage: `url(${repository})`,
         backgroundSize: "cover",
         backgroundRepeat: " no-repeat",
-        backgroundPosition: "top",
+        backgroundPosition: "50% 50%",
         backgroundAttachment: "fixed",
       }}
     >
