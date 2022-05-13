@@ -37,6 +37,7 @@ const WorkExp = () => {
           >
             <Typography>{`${item.employer} from ${item.city}`}</Typography>
             <Typography>{item.jobPosition}</Typography>
+            <Typography>{item.description}</Typography>
             <Typography>{`Data: ${item.startDate} - ${item.endDate}`}</Typography>
           </Box>
         </ListItem>

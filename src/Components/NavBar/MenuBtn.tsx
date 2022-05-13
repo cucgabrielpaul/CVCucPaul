@@ -13,9 +13,9 @@ const MenuBtn = (props: any) => {
         justifyContent: "center",
       }}
     >
-      {pages.map((page: any) => (
+      {pages.map((page: any, index: number) => (
         <Button
-          key={page.name}
+          key={index}
           sx={{
             my: 2,
             color: "white",

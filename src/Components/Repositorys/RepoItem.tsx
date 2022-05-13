@@ -8,20 +8,14 @@ import {
 } from "@mui/material";
 
 const RepoItem = (props: any) => {
-  const {
-    name,
-    id,
-    description,
-    topics,
-    created_at,
-    updated_at,
-    html_url,
-    visibility,
-  } = props;
+  const { name, description, topics, created_at, updated_at, html_url } = props;
+
+  const dateConvertor = (date: string) =>
+    date.split("T")[0].split("-").reverse().join(".");
 
   return (
     <List sx={{ width: "100%", maxWidth: 360 }}>
-      <ListItem button key={id} component="a" href={html_url} target="_blank">
+      <ListItem button component="a" href={html_url} target="_blank">
         <ListItemAvatar>
           <Avatar
             alt={name}
@@ -39,11 +33,17 @@ const RepoItem = (props: any) => {
             flexDirection: "column",
             alignItems: "start",
             margin: "0 10px",
-            width: "400px",
+            minWidth: "400px",
           }}
         >
-          <Typography color="white">{name}</Typography>
+          <Typography color="white">{name.toUpperCase()}</Typography>
           <Typography color="white">{`${topics.join(", ")}`}</Typography>
+          <Typography color="white">
+            {`Create : ${dateConvertor(created_at)}`}
+          </Typography>
+          <Typography color="white">
+            {`Update: ${dateConvertor(updated_at)}`}
+          </Typography>
         </Box>
       </ListItem>
     </List>

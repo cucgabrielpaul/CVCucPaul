@@ -49,8 +49,8 @@ const DropDownBtn = (props: any) => {
           display: { xs: "block", md: "none" },
         }}
       >
-        {pages.map((page: any) => (
-          <MenuItem key={page.name} onClick={handleCloseNavMenu}>
+        {pages.map((page: any, index: number) => (
+          <MenuItem key={index} onClick={handleCloseNavMenu}>
             <Link
               style={{
                 display: "flex",

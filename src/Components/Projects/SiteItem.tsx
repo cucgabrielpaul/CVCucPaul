@@ -8,7 +8,8 @@ import {
 } from "@mui/material";
 
 const SiteItem = (props: any) => {
-  const { name, id, url, screenshot_url, created_at, updated_at } = props;
+  const { name, url, screenshot_url, created_at, updated_at } = props;
+
   const dateConvertor = (date: string) =>
     date.split("T")[0].split("-").reverse().join(".");
 
@@ -18,7 +19,7 @@ const SiteItem = (props: any) => {
         maxWidth: 360,
       }}
     >
-      <ListItem button key={id} component="a" href={url} target="_blank">
+      <ListItem button component="a" href={url} target="_blank">
         <ListItemAvatar>
           <Avatar
             alt={name}
@@ -36,12 +37,12 @@ const SiteItem = (props: any) => {
             flexDirection: "column",
             alignItems: "start",
             margin: "0 10px",
-            width: "400px",
+            minWidth: "400px",
           }}
         >
-          <Typography color="white">{name}</Typography>
+          <Typography color="white">{name.toUpperCase()}</Typography>
           <Typography color="white">
-            {`Create: ${dateConvertor(created_at)}`}
+            {`Create : ${dateConvertor(created_at)}`}
           </Typography>
           <Typography color="white">
             {`Update: ${dateConvertor(updated_at)}`}

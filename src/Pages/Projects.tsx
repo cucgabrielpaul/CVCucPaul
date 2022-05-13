@@ -13,7 +13,7 @@ const Projects = () => {
         backgroundImage: `url(${projects})`,
         backgroundSize: "container",
         backgroundRepeat: " no-repeat",
-        backgroundPosition: "top",
+        backgroundPosition: "50% 50%",
         backgroundAttachment: "fixed",
       }}
     >

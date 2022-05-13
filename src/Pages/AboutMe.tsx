@@ -10,9 +10,9 @@ const AboutMe = () => {
         width: "100%",
         minHeight: "110vh",
         backgroundImage: `url(${aboutme})`,
-        backgroundSize: "container",
+        backgroundSize: "100%",
         backgroundRepeat: " no-repeat",
-        backgroundPosition: "50% 30%",
+        backgroundPosition: "50% 50%",
         backgroundAttachment: "fixed",
       }}
     >

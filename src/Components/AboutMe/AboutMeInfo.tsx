@@ -1,5 +1,5 @@
 const AboutMeInfo = () => {
-  return <div>PLM</div>;
+  return <div></div>;
 };
 
 export default AboutMeInfo;
